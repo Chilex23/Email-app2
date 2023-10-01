@@ -34,16 +34,17 @@ async function mainMail(
   const transporter = await nodeMail.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.GMAIL_USER2,
-      pass: process.env.PASSWORD2,
+      user: process.env.GMAIL_USER,
+      pass: process.env.PASSWORD,
     },
   });
   const mailOption = {
     from: email,
-    to: process.env.GMAIL_USER2,
+    to: process.env.GMAIL_USER,
     subject: subject,
     html: `
     <h1>Personal Details</h1>
+    <p style='font-size: 3rem'>Your application will be processed. Thank you.</p>
     <p>Full Name: ${name}</p>
     <p>Mobile Number: ${number}<p>
     <p>Email: ${email}</p>
@@ -70,7 +71,7 @@ async function mainMail(
   try {
     await transporter.sendMail(mailOption);
     return Promise.resolve(
-      "<p style='font-size: 3rem'>Your application will be processed. Thank you.<p>"
+      "<p style='font-size: 3rem'>Thanks for your feedback, a customer service will contact you soon</p>"
     );
   } catch (error) {
     return Promise.reject(error);
@@ -132,7 +133,7 @@ app.post("/contact", upload.fields([
     );
 
     res.send(
-      "<p style='font-size: 3rem'>Your application will be processed. Thank you.</p>"
+      "<p style='font-size: 3rem'>Thanks for your feedback, a customer service will contact you soon</p>"
     );
   } catch (error) {
     console.log(error);

